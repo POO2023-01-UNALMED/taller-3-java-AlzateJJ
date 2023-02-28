@@ -1,28 +1,13 @@
 package taller3.televisores;
 
 public class TV {
-//	Los atributos: marca (Marca), canal(int), precio(int), estado(boolean), volumen(int) y
-//	control (Control).
-//	• Tendrá un constructor que tiene como parámetros la marca y el estado (si el televisor
-//	este encendido o no)
-//	• Por defecto el valor de los atributos canal, volumen y precio serán: 1, 1 y 500
-//	respectivamente.
-//	• Tendrá los métodos set y get para los atributos marca, control, precio, volumen y canal.
-//	• Como somos una fabrica y queremos llevar las cuentas de la fabricación de televisores,
-//	implementar el conteo de televisores creados (objetos creados de la clase) para lo cual
-//	se debe implementar el atributo numTV (de tipo clase y no de instancia) y el método
-//	correspondiente para acceder a este valor.
-	
-//	• Definir los métodos para cambiar el estado de encendido a apagado llamados turnOn y
-//	turnOff, que respectivamente se encargaran de encender y apagar el televisor.
-//	• Implementar el método getEstado que retornara el valor del atributo estado.
-//
+
 	private Marca marca;
 	private int canal=1;
 	private int precio=500;
 	private boolean estado;
 	private int volumen=1;
-	public Control control;
+	Control control;
 	private static int numTV;
 	
 	//constructor
@@ -135,20 +120,6 @@ public class TV {
 			}
 		}
 	}
-	
-	
-//	Otro requerimiento en nuestros televisores es que implementemos el cambio de canal y el
-//	cambio de volumen, para esto definimos los métodos canalUp y canalDown, que se encargaran
-//	de cambiar el canal aumentándolo o disminuyéndolo, y los métodos volumenUp, y
-//	volumenDown que se encargan de cambiar el volumen aumentándolo o disminuyéndolo.
-	
-//	Una de las dos limitaciones que se afronta en estos televisores, es que los canales disponibles
-//	solo van del canal 1 al canal 120 y para cambiar de canal necesariamente debe estar encendido
-//	el televisor, por obvias razones, así que en este diseño que se está construyendo, se debe
-//	implementar las condiciones que sean necesarias para representar lo anterior. También ocurre lo
-//	mismo con el volumen, esta ira de 0 a 7 y para que este cambie debe estar encendido el
-//	televisor. Para ambos casos, cambio de canal o subir volumen, en caso de un valor por encima o
-//	debajo de sus valores límites o que no se cumpla que esté encendido, no se debe hacer nada.
 	
 	
 }

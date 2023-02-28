@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class Control {
 	
-	private TV tv;
+	TV tv;
 	
 	//aquí, en la primera línea, se le asigna un valor al atributo televisor de la clase Control,
 	//en la segunda línea, el método se va al método setcontrol de la clase TV, y la variable control 
@@ -10,7 +10,7 @@ public class Control {
 	
 	public void enlazar(TV tele) {
 		this.tv = tele;
-		tele.setControl(this);
+		tele.control=this;
 	}
 	
 	public void turnOn() {
