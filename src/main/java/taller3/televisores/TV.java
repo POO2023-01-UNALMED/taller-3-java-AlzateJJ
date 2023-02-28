@@ -81,7 +81,12 @@ public class TV {
 		return this.canal;
 	}
 	
-	//metodo numTV
+	//metodo get y set numTV
+	
+	public void setNumTV(int num) {
+		numTV=num;
+	}
+	
 	public int getNumTV() {
 		return numTV;
 	}
