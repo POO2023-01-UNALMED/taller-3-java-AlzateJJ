@@ -37,8 +37,8 @@ public class TV {
 		this.marca=mrc;
 	}
 	
-	public String getMarca() {
-		return this.marca.getNombre();
+	public Marca getMarca() {
+		return this.marca;
 	}
 	
 	// get y set control (?)
@@ -51,34 +51,34 @@ public class TV {
 	
 	// get y set precio
 	public void setPrecio(int pr1) {
-		precio=pr1;
+		this.precio=pr1;
 	}
 	public int getPrecio() {
-		return precio;
+		return this.precio;
 	}
 	
 	// get y set volumen
 	public void setVolumen(int vol) {
-		if (estado==true) {
+		if (this.estado==true) {
 			if (vol>=0 & vol<=7) {
-				volumen=vol;
+				this.volumen=vol;
 			}
 		}
 	}
 	public int getVolumen() {
-		return volumen;
+		return this.volumen;
 	}
 	
 	// get y set canal
 	public void setCanal(int can) {
-		if (estado==true) {
+		if (this.estado==true) {
 			if (can>=1 & can<=120) {
-				canal=can;
+				this.canal=can;
 			}
 		}
 	}
 	public int getCanal() {
-		return canal;
+		return this.canal;
 	}
 	
 	//metodo numTV
@@ -88,22 +88,22 @@ public class TV {
 	
 	//metodos turnOn y turnOff
 	public void turnOn() {
-		estado=true;
+		this.estado=true;
 	}
 	public void turnOff() {
-		estado=false;
+		this.estado=false;
 	}
 	
 	//get estado
 	public boolean getEstado() {
-		return estado;
+		return this.estado;
 	}
 	
 	//canalUp y canalDown
 	public void canalUp() {
-		if (estado==true) {
-			if (canal!=120) {
-				canal++;
+		if (this.estado==true) {
+			if (this.canal!=120) {
+				this.canal++;
 			}
 		}
 	}

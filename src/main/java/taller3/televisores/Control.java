@@ -7,6 +7,7 @@ public class Control {
 	//aquí, en la primera línea, se le asigna un valor al atributo televisor de la clase Control,
 	//en la segunda línea, el método se va al método setcontrol de la clase TV, y la variable control 
 	//del televisor sería el objeto de clase control actual.
+	
 	public void enlazar(TV tele) {
 		this.tv = tele;
 		tele.setControl(this);
@@ -15,6 +16,7 @@ public class Control {
 	public void turnOn() {
 		tv.turnOn();
 	}
+	
 	public void turnOff() {
 		tv.turnOff();
 	}
