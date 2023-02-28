@@ -35,8 +35,8 @@ public class TV {
 	}
 	
 	// get y set precio
-	public void setPrecio(int pr1) {
-		this.precio=pr1;
+	public void setPrecio(int pre) {
+		this.precio=pre;
 	}
 	public int getPrecio() {
 		return this.precio;
@@ -45,7 +45,7 @@ public class TV {
 	// get y set volumen
 	public void setVolumen(int vol) {
 		if (this.estado==true) {
-			if (vol>=0 & vol<=7) {
+			if (vol>=0 && vol<=7) {
 				this.volumen=vol;
 			}
 		}
@@ -57,7 +57,7 @@ public class TV {
 	// get y set canal
 	public void setCanal(int can) {
 		if (this.estado==true) {
-			if (can>=1 & can<=120) {
+			if (can>=1 && can<=120) {
 				this.canal=can;
 			}
 		}
@@ -68,11 +68,11 @@ public class TV {
 	
 	//metodo get y set numTV
 	
-	public void setNumTV(int num) {
+	public static void setNumTV(int num) {
 		numTV=num;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
@@ -92,14 +92,14 @@ public class TV {
 	//canalUp y canalDown
 	public void canalUp() {
 		if (this.estado==true) {
-			if (this.canal!=120) {
+			if (this.canal<120) {
 				this.canal++;
 			}
 		}
 	}
 	public void canalDown() {
 		if (estado==true) {
-			if (canal!=1) {
+			if (canal>1) {
 				canal--;
 			}
 		}
@@ -108,14 +108,14 @@ public class TV {
 	//volumenUp y volumenDown
 	public void volumenUp() {
 		if (estado==true) {
-			if (volumen!=7) {
+			if (volumen<7) {
 				volumen++;
 			}
 		}
 	}
 	public void volumenDown() {
 		if (estado==true) {
-			if (volumen!=0) {
+			if (volumen>0) {
 				volumen--;
 			}
 		}
